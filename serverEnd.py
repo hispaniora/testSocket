@@ -4,7 +4,7 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 # 绑定地址和端口
 s.bind(('127.0.0.1', 8099))
-print('开始通信--')
+print('客户端开始通信--')
 while True:
     # 接收数据，自动阻塞等待客户端请求
     data,addr = s.recvfrom(1024)  # 接收客户端发送过来的数据内容和地址
