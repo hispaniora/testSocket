@@ -5,7 +5,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 print('客户端——')
 while True:
     data = input('自己：')
-    s.sendto(data.encode(), ('192.168.1.103', 8099))  # 发送信息
+    s.sendto(data.encode(), ('192.168.1.103', 8099))  # 客户端明确知道服务器端的IP和port
     recvMsg = s.recv(1024)  # 接收返回的信息
     print('服务器:', recvMsg.decode())
 s.close()
