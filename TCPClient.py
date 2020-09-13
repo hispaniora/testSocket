@@ -9,4 +9,4 @@ while True:
     print(recvMsg)
     if data == 'close':
         break
-        s.close()
+    s.close()

@@ -19,4 +19,4 @@ while True:
             print(ip, '-', port, ':', data)
             msg = input('回复：')
             client.send(msg.encode())  # 给客户端回复
-s.close()
+    s.close()
